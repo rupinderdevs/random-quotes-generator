@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
   },
   quoteCopiedMessage: {
     color: "green",
-    fontSize: "13px",
+    fontSize: "1rem",
     marginLeft: "10px",
   },
 }));
@@ -103,7 +103,7 @@ export default function QuoteCard() {
         <div>
           {quoteCopied ? (
             <p className={classes.quoteCopiedMessage}>
-              Quote copied to clipboard
+              Copied
             </p>
           ) : (
             <IconButton aria-label="copy-icon" onClick={copyQuote}>
